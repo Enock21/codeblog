@@ -1,0 +1,29 @@
+1. Criar o pacote "service" juntamente a model e repository
+
+2. Dentro do pacote service, criar a interface CodeblogService. Nela ficarão as referências aos métodos que serão implementados na classe a ser criada posteriormente.
+
+3. Criar o método findAll() que retornará uma lista de objetos da classe Post
+
+4. Criar o método findById(long id), que retorna um único Post
+
+5. Criar o método save(Post post), que salvará um Post no BD
+
+6. Dentro do pacote service, criar o pacote serviceImpl para armazenar as implementações da interface service.
+
+7. Criar a classe CodeblogServiceImpl no pacote apropriado e fazer a classe inmplementar sua respectiva interface.
+
+8. Na classe CodeblogServiceImpl, colocar a anotação @Autowired (ponto de injeção) acima da declaração de CodeblogRepository, para que se possa utilizar instâncias do repository.
+
+9. Para cada método de ServiceImpl, implementá-los invocando os respectivos métodos já prontos de codeBlogRepository, que por sua vez extende JPARepository.
+
+Obs: no método findById(long id) dará um erro de compilação pois o retorno do método findById da JPA retorna um objeto Optional, e não um Post como é esperado. Por isso, usar o método .get() no retorno, pois este retornará um Post.
+
+10. Colocar a anotação @Service na classe CodeblogServiceImpl, para indicar ao Spring que esta será gerenciada por ele.
+
+Obs: sempre coloque ponto e vírgula no final de um comando no psql.
+
+11. Em src > main > java > com.spring.codeblog, criar o pacote utils com a classe DummyData para popular a tabela do BD.
+
+12. Na classe DummyData, adicionar o ponto de injeção CodeblogRepository, declarando a instância com a anotação @Autowired.
+
+13. Na classe DummyData, colocar anotação @PostConstruct em savePosts() para que o método seja executado conforme a aplicação for "subindo".

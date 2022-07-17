@@ -1,0 +1,1 @@
+Não foi possível instalar a versão mais atual (14). A que funcionou foi a versão 13.

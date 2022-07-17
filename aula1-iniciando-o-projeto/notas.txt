@@ -1,0 +1,62 @@
+#Passos da criação do projeto
+
+1. Mudar nome do Group de com.exemple para com.spring
+
+---
+
+2. Adicionar dependências
+
+Spring Web: para projetos web.
+
+Spring Data JPA: para conexão com o banco de dados.
+
+PostgreSQL Driver: banco de dados de fato.
+
+Thymeleaf: template engine.
+
+DevTools.
+
+Spring Security.
+
+---
+
+3. Gerar e baixar o projeto, depois importar em uma IDE.
+
+---
+
+Em aplication.properties é onde ficam as configurações do banco de dados.
+
+---
+
+4. Para conexão com banco de dados:
+
+- Precisa ter o postgreSQL instalado.
+
+- No terminal do SQL Shell, se conectar ao banco local.
+
+---
+
+5. Criar um novo banco de dados no sql shell, com o seguinte comando: 
+
+"create database codeblog;"
+
+Será concluído quando aparecer "CREATE DATABASE" no console.
+
+---
+
+6. Entrar no banco criado no psql com:
+
+\c codeblog;
+
+---
+
+7. Em codeblog > src > resources > application.properties, colar as seguintes linhas de código:
+
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=trueblog
+#Banco local - CodeBlog
+spring.datasource.url= jdbc:postgresql://localhost:5432/codeblog //Aqui é a url de conexão.
+spring.datasource.username=postgres //Nome do usuário do BD
+spring.datasource.password=banco123 //Senha do usuário do BD
+spring.jpa.hibernate.ddl-auto=update //Atualiza automaticamente a tabela do BD a cada início da aplicação.
+
+As 4 últimas linhas são a configuração do BD.

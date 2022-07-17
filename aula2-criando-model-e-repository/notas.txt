@@ -1,0 +1,35 @@
+1. codeblog > src > main > java > com.spring.codeblog: criar novo pacote "model"
+
+---
+
+#CRIAÇÃO DA CLASSE POST
+
+2. codeblog > src > main > java > com.spring.codeblog > model: criar nova classe "Post"
+
+3. Pôr anotação @Entity na classe Post
+
+4. Pôr anotação @Table(name="TB_POST") na classe Post
+
+5. Criar atributo id com anotação @Id e @GeneratedValue(strategy = GenerationType.AUTO)
+
+6. Adicionar demais atributos de Post e gerar getters e setters.
+
+7. Adicionar anotação @NotBlank acima de atributos que não possam ficar em branco.
+
+8. Adicionar anotação @Lob no atributo texto para o BD aceitar um valor grande para ele.
+
+9. Adicionar anotação @JsonFormat para a data, com a configuração do formato da data: @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd-MM-yyyy")
+
+---
+
+# CRIAÇÃO DA CLASSE REPOSITORY
+
+10. codeblog > src > main > java > com.spring.codeblog: criar novo pacote "repository"
+
+11. Criar nova interface em repository chamada "CodeblogRepository"
+
+12. A interface estende JpaRepository<Post, Long>. Post se refere ao nome do model e Long é o tipo do id. Através desta extensão, a aplicação passa a ter acesso a métodos já prontos do spring data, exemplos: findAll, findById, etc.
+
+13. No psql, digitar \d para verificar se a tabela foi devidamente criada.
+
+14. Para ver a descrição da tabela tb_post, no psql: \d tb_post

@@ -27,3 +27,5 @@ Obs: sempre coloque ponto e vírgula no final de um comando no psql.
 12. Na classe DummyData, adicionar o ponto de injeção CodeblogRepository, declarando a instância com a anotação @Autowired.
 
 13. Na classe DummyData, colocar anotação @PostConstruct em savePosts() para que o método seja executado conforme a aplicação for "subindo".
+
+14. Uma vez iniciada a aplicação, comentar a anotação @PostConstruct para que não sejam geradas cópias dos dummy datas a cada novo início da aplicação.

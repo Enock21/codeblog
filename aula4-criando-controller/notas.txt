@@ -1,0 +1,9 @@
+1. Criar novo pacote "controller" em com.spring.codeblog, e criar nova classe "CodeblogController".
+
+Obs: o Controller será uma classe gerenciável pelo Spring da mesma forma que a classe service.
+
+2. Adicionar anotação @Controller acima do nome da classe. Indica o estereótipo de Controller ao Spring.
+
+3. Declarar o objeto do topo CodeblogService, juntamente com a anotação @Autowired
+
+Obs: este projeto é baseado em MVC: Model View e Controller. Lembrar dos tipos de classe específicos desse modelo, como o ModelAndView.

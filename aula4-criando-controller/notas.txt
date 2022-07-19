@@ -7,3 +7,11 @@ Obs: o Controller será uma classe gerenciável pelo Spring da mesma forma que a
 3. Declarar o objeto do topo CodeblogService, juntamente com a anotação @Autowired
 
 Obs: este projeto é baseado em MVC: Model View e Controller. Lembrar dos tipos de classe específicos desse modelo, como o ModelAndView.
+
+4. Criar o método getPosts(), que retorna um ModelAndView (específico do spring). Lembrar de usar o método ModelAndView.addObject("posts", posts), para que o resultado possa ser renderizado no html.
+
+5. Colocar anotação @RequestMapping() no método getPosts() para determinar qual método http vai ser utilizado, assim como qual url vai ser usada.
+
+6. Criar uma view. Em src > resources > templates, criar novo file de nome "posts.html". Colocar um texto introdutório neste arquivo usando <h1></h1>
+
+7. O spring security está ativado, porém ainda não configurado. Por isso, uma vez que se acessa o localhost:8080/posts há um redirecionamento para uma tela de login. Para desativar esta configuração, ir para pom.xml e comentar as 4 linhas relativas a declaração do spring-boot-starter-security (de <dependency> a </dependency>). Lembrar que comentário no html é no formato <!--comentario-->. Comentar também as 5 linhas relativas a declaração do spring-security-test.

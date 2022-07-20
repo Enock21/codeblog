@@ -1,0 +1,13 @@
+1. Acessar o site getbootstrap.com. Bootstrap é um framework para frontend que já tem alguns recursos prontos de html, javascript e css. Neste exemplo se utiliza o bootstrap CDN.
+
+2. Definir uma estrutura de layout para o blog. Em posts.html: definir tag html, cabeçalho e corpo.
+
+3. Como se trata de um blog, exigirá alguns componentes: header (onde fica um navibar, por ex) e section (onde fica a listagem dos posts)
+
+4. Definir o título (<title>) dentro da tag head.
+
+5. Para introduzir o bootstrap na aplicação, ir em Quick Start e "Include Bootstrap's CSS and JS". Copiar toda a linha da tag marcada com "link" e colar em posts.html na tag head (logo abaixo do título).
+
+6. Para definir a navbar, isto é, o cabeçalho da página, ir na barra de pesquisa do site do bootstrap e pesquisar "navbar".
+
+7. 

@@ -10,4 +10,22 @@
 
 6. Para definir a navbar, isto é, o cabeçalho da página, ir na barra de pesquisa do site do bootstrap e pesquisar "navbar".
 
-7. 
+7. Colar entre as tags header no arquivo post.html o seguinte trecho de código:
+
+<!-- As a link -->
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1" style="font-weight: bold;">MyCodeBlog</span>
+    </nav>
+
+8. Adicionar a section. Dentro das tags section em posts.html, adicionar o seguinte:
+
+<div class="container" style="width: 60%; padding-bottom: 30px;">
+</div>
+
+O tipo da classe é "container" pois irá conter o conteúdo da section.
+
+O width: 60%; indica que não se usará a página inteira para a exibição dos posts, mas sim apenas 60% dela. É uma questão de design.
+
+O padding-bottom: 30px; indica um espaço em branco de 30px no fundo da página, para que o conteúdo não fique grudado com o fundo.
+
+9. Implementar o interior do container. Cada post é construído dentro de um "card". Portanto ir na barra de pesquisa do bootstrap e digitar "cards".

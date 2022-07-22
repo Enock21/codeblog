@@ -28,4 +28,8 @@ O width: 60%; indica que não se usará a página inteira para a exibição dos 
 
 O padding-bottom: 30px; indica um espaço em branco de 30px no fundo da página, para que o conteúdo não fique grudado com o fundo.
 
-9. Implementar o interior do container. Cada post é construído dentro de um "card". Portanto ir na barra de pesquisa do bootstrap e digitar "cards".
+9. Implementar o interior do container. Cada post é construído dentro de um "card". Portanto ir na barra de pesquisa do bootstrap e digitar "cards". Escolher um dos códigos pré-prontos para a geração de cards, copiar e colar no arquivo posts.html, em section, em div com "container".
+
+Obs: dentro da tag div com class="card-body" é onde fica o texto do card.
+
+10. Adicionar Breadcrumb, isto é, uma ferramenta do bootstrap para a criação de "links de retorno" para uma página anterior. Pesquisar "breadcrumb" na barra de pesquisa do bootstrap. Inserir trecho de código html em posts.html >> section >> div class="container"

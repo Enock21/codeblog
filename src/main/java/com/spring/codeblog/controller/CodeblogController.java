@@ -20,7 +20,7 @@ public class CodeblogController {
     public ModelAndView getPosts(){
         ModelAndView mv = new ModelAndView("posts");
         List<Post> posts = codeblogService.findAll();
-        mv.addObject("posts", posts);
+        mv.addObject("posts", posts); //Indica que quando se acessa o atributo "posts", se tem acesso a uma listagem com todos os posts no BD
         return mv;
     }
 }

@@ -1,0 +1,10 @@
+1. Definir a estrutura dos posts. Em posts.html, entre as tags div class="card-body", colocar o seguinte trecho de código:
+
+<p class="card-subtitle mb-2 text muted" style="font-size: 0.8rem;"><!--Tag p é onde ficam autor e data-->
+
+</p>
+
+
+<a><h4 class="card-title" style="font-weight: bold; color: black; padding-top: 5px;"></h4></a><!--Dentro da tag "a" haverá um titulo-->
+
+<p class="card-text"></p>

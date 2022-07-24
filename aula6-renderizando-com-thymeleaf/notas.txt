@@ -4,7 +4,14 @@
 
 </p>
 
-
 <a><h4 class="card-title" style="font-weight: bold; color: black; padding-top: 5px;"></h4></a><!--Dentro da tag "a" haverá um titulo-->
 
 <p class="card-text"></p>
+
+2. Em posts.html, é necessário algo que busque do controller os posts. Para isso, adicionar o DOCTYPE html e declarar, logo abaixo, o uso do thymeleaf com xmlns.
+
+3. Em posts.html, na parte que define os cards, adicionar no fim da tag que começa com "<div class="card shadow-sm...": th:each="post : ${posts}". Isto ainda dentro da tag.
+
+O que foi feito anteriormente é uma estrutura for para o thymeleaf. Há um card para cada post listado no BD. Assim sendo, o trecho de código indica que, para cada post, será buscado toda a listagem de posts do controller. Para cada um dos posts, será criado um card.
+
+4. Em posts.html > body > section > div class="container" > div class="card... > tag p, adicionar

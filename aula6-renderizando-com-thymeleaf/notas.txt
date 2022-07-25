@@ -20,4 +20,4 @@ O que foi feito anteriormente é uma estrutura for para o thymeleaf. Há um card
 
 Obs: foi adicionado a configuração do titulo, mas como o título está localizado em uma tag a, indica que ele também é um link. Para que posteriormente se possa adicionar a configuração de link, adicionar na tag a: href="#"
 
-6. Definir o texto. Em <div class="card... >> div class="card-body >> <p class="card-text">, adicionar tag span e, dentro dela, declarar o texto.
+6. Definir o texto. Em <div class="card... >> div class="card-body >> <p class="card-text">, adicionar tag span e, dentro dela, declarar o texto. Para esse formato em específico se usa o th:utext.

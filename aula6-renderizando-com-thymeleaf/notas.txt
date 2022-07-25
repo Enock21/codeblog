@@ -14,4 +14,10 @@
 
 O que foi feito anteriormente é uma estrutura for para o thymeleaf. Há um card para cada post listado no BD. Assim sendo, o trecho de código indica que, para cada post, será buscado toda a listagem de posts do controller. Para cada um dos posts, será criado um card.
 
-4. Em posts.html > body > section > div class="container" > div class="card... > tag p, adicionar
+4. Em posts.html > body > section > div class="container" > div class="card... > tag p, adicionar tags span e declarar, usando o parâmetro do thymeleaf th, o autor do texto do post e, em seguida, a data do post. Isto faz parte de uma esturutra for.
+
+5. Adicionar título. Em div class="card... > <a><h4, criar tags span e adicionar estrutura for para pegar o titulo.
+
+Obs: foi adicionado a configuração do titulo, mas como o título está localizado em uma tag a, indica que ele também é um link. Para que posteriormente se possa adicionar a configuração de link, adicionar na tag a: href="#"
+
+6. Definir o texto. Em <div class="card... >> div class="card-body >> <p class="card-text">, adicionar tag span e, dentro dela, declarar o texto.

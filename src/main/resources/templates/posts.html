@@ -24,16 +24,17 @@
                 </ol>
             </nav>
 
-            <div class="card shadow-sm bg-white rounded" style="margin-top: 20px;">
+            <div class="card shadow-sm bg-white rounded" style="margin-top: 20px;" th:each="post : ${posts}">
                 <div class="card-body">
                     <p class="card-subtitle mb-2 text muted" style="font-size: 0.8rem;"><!--Tag p é onde ficam autor e data-->
-
+                        <span th: text="${post.autor}"></span>
+                        <span th: text="${post.data}"></span>
                     </p>
 
 
-                    <a><h4 class="card-title" style="font-weight: bold; color: black; padding-top: 5px;"></h4></a><a><h4 class="card-title" style="font-weight: bold; color: black; padding-top: 5px;"></h4></a><!--Dentro da tag "a" haverá um titulo, assim como um link para redirecionamento para um certo posto-->
+                    <a href="#"><h4 class="card-title" style="font-weight: bold; color: black; padding-top: 5px;"><span th: text="${post.titulo}"></span></h4></a><a><h4 class="card-title" style="font-weight: bold; color: black; padding-top: 5px;"></h4></a><!--Dentro da tag "a" haverá um titulo, assim como um link para redirecionamento para um certo posto-->
 
-                    <p class="card-text"></p><!--Onde fica um breve texto, isto é, os primeiros 400 caracteres de um post-->
+                    <p class="card-text"><span th:utext="${#strings.abbreviate(post.texto, 400)}"></span></p><!--Onde fica um breve texto, isto é, os primeiros 400 caracteres de um post-->
                 </div>
             </div>
         </div>

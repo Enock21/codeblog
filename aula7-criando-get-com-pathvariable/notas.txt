@@ -1,9 +1,11 @@
 1. Para criar o método getPostDetails, copiar a estrutura do método getPosts em CodeblogController.
 
-2. Onde tem "/posts", na assinatura RequestMapping, mudar para "/posts/[id]"
+2. Onde tem "/posts", na assinatura RequestMapping, mudar para "/posts/{id}"
 
 3. Adicionar parâmetro no GetPostDetails: @PathVariable("id") long id
 
 4. Em src > main > resources > templates, criar novo arquivo html chamado postDetails.html
 
 5. Alterar trechos necessários para a implementação do GetPostDetails
+
+Obs: para testar, acessar url localhost:8080/posts/id, sendo "id" o id de um post já adicionado ao BD

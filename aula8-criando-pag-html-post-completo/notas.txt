@@ -1,0 +1,12 @@
+1. Copiar toda a esturura de posts.html para postDetails.html
+
+2. Para iserir ícone, em postDetails.html > <head>, adicionar link de referência para a api de ícones do google:
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
+Obs: blogs tem seu próprio padrão de estrutura.
+
+3. Em postDetails.html trocar <section> por <main>
+
+4. Adicionar breadcrumb para a nova página que indica os detalhes de um post selecionado. Adicionar em postDetails.html > <main> > <div class = "container"... > <nav... > <ol...
+
+5. Transformar o breadcrum de Posts em um link para a página principal do blog através da tag <a> com href="/posts"

@@ -10,3 +10,7 @@ Obs: blogs tem seu próprio padrão de estrutura.
 4. Adicionar breadcrumb para a nova página que indica os detalhes de um post selecionado. Adicionar em postDetails.html > <main> > <div class = "container"... > <nav... > <ol...
 
 5. Transformar o breadcrum de Posts em um link para a página principal do blog através da tag <a> com href="/posts"
+
+6. Para criar o corpo do artigo do post, adicionar estrutura da tag <article> logo abaixo da estrutura de bradcrumb, em postDetails.html
+
+7. Adicionar tag span na tag h1 dentro da tag article em postDetails.html. Dentro da tag span, usar th:text para invocar atributo do post

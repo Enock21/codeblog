@@ -32,4 +32,9 @@ public class CodeblogController {
         mv.addObject("post", post); //Indica que o objeto post será passado como model e renderizado na view
         return mv;
     }
+
+    @RequestMapping(value = "/newpost", method = RequestMethod.GET)
+    public String getPostForm(){
+        return "postForm";
+    }
 }

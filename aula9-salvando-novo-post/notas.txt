@@ -1,0 +1,3 @@
+1. Criar novo arquivo postForm.html no pacote "templates"
+
+2. Criar um @RequestMapping onde irá se definir o valor da url e o método que receberá a requisição. Abaixo criar o método getPostForm()

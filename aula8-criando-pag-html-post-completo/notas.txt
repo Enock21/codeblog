@@ -20,4 +20,4 @@ Obs: blogs tem seu próprio padrão de estrutura.
 9. Em postDetails.html, na tag article, na tag section, na tag p, adicionar span com th:utext para o atributo texto do post. Repare que é utext em vez de text por se tratar de um texto longo
 
 10. Em posts.html > body > section > div class="card... > div class="card-body... > a href..., apagar "href="#"" e substituir por:
-th:href="${(#mvc.url('BC#getPostDetails').arg(0, post.id)).build()}"
+th:href="${(#mvc.url('CC#getPostDetails').arg(0, post.id)).build()}"

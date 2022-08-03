@@ -1,3 +1,5 @@
 1. Criar novo arquivo postForm.html no pacote "templates"
 
 2. Criar um @RequestMapping onde irá se definir o valor da url e o método que receberá a requisição. Abaixo criar o método getPostForm()
+
+3. Para adicionar o botão de "Novo Post", em post.html, na configuração de navbar, adicionar a linha: <a h="/newpost" class="btn btn-primary" role="button">Novo Post</a>

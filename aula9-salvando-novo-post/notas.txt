@@ -3,3 +3,5 @@
 2. Criar um @RequestMapping onde irá se definir o valor da url e o método que receberá a requisição. Abaixo criar o método getPostForm()
 
 3. Para adicionar o botão de "Novo Post", em post.html, na configuração de navbar, adicionar a linha: <a href="/newpost" class="btn btn-primary" role="button">Novo Post</a>
+
+4. Em posts.html adicionar o método savePost com RequestMethod.POST. Colocar anotação @Valid no parâmetro do método para indicar que os campos dos atributos da classe Post devem ser validados de acordo com as anotações lá contidas antes que um objeto do tipo Post possa ser salvo no BD.

@@ -5,3 +5,5 @@
 3. Para adicionar o botão de "Novo Post", em post.html, na configuração de navbar, adicionar a linha: <a href="/newpost" class="btn btn-primary" role="button">Novo Post</a>
 
 4. Em posts.html adicionar o método savePost com RequestMethod.POST. Colocar anotação @Valid no parâmetro do método para indicar que os campos dos atributos da classe Post devem ser validados de acordo com as anotações lá contidas antes que um objeto do tipo Post possa ser salvo no BD.
+
+5. Criar corpo do método savePost com um if para conferir se há erro detectado pelas assinaturas de validação.

@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
+import java.time.LocalDate;
 import java.util.List;
 
 @Controller
@@ -43,6 +44,12 @@ public class CodeblogController {
 
     @RequestMapping(value = "/newpost", method = RequestMethod.POST)
     public String savePost(@Valid Post post, BindingResult result, RedirectAttributes attributes){
-        
+        if(result.hasErrors()){
+            return "redirect:/newpost";
+        }
+
+        post.setData(LocalDate.now());
+        codeblogService.save(post);
+        return "redirect:/post";
     }
 }

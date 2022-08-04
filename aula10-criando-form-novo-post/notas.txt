@@ -1,0 +1,9 @@
+1. Copiar toda a estrutura de posts.html e colar em postForm.html
+
+2. Remover todo o campo <div> logo abaixo da definição de breadcrumb, em <section>
+
+3. Deletar o link para "Novo Post"
+
+4. Adicionar novo breadcrumb indicando a área de Novo Post e definir ela como a área ativa.
+
+5. Adicionar link de retorno para a pag principal no breadcrumb "Posts". 

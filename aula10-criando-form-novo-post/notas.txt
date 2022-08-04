@@ -6,4 +6,6 @@
 
 4. Adicionar novo breadcrumb indicando a área de Novo Post e definir ela como a área ativa.
 
-5. Adicionar link de retorno para a pag principal no breadcrumb "Posts". 
+5. Adicionar link de retorno para a pag principal no breadcrumb "Posts".
+
+6. Adicionar nova estrutura <div> logo abaixo do bloco <nav> de breadcrumb. Dentro dela, adicionar estrutura do form.

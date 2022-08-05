@@ -26,10 +26,21 @@
         </nav>
 
         <div>
-            <form method="post">
+            <form method="post"> <!--Indica que o metodo html sendo usado é o GET-->
                 <div class="form-group">
                     <input type="text" class="form-control" name="titulo" placeholder="Titulo *">
                 </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="autor" placeholder="Autor *">
+                </div>
+
+                <textarea type="text" class="form-control" name="texto" placeholder="Texto *"></textarea> <!--textarea indica um texto grande-->
+
+                <small class="form-text text-muted">(*) Campos obrigatórios</small>
+
+                <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Publicar</button> <!--type="submit" indica que, ao ser pressionado, o botão salvará o post no BD. class="btn btn-primary" indica que um modelo de botão primário do Bootstrap está sendo aplicado-->
+                <a href="/posts" class="btn btn-light" role="button" style="margin-top: 10px;">Cancelar</a>
+                <!-- <button type="submit" class="btn" style="margin-top: 10px;">Cancelar</button>-->
             </form>
         </div>
     </div>

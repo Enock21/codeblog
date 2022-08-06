@@ -9,3 +9,10 @@
 5. Adicionar link de retorno para a pag principal no breadcrumb "Posts".
 
 6. Adicionar nova estrutura <div> logo abaixo do bloco <nav> de breadcrumb. Dentro dela, adicionar estrutura do form.
+
+7. Caso os passos anteriores tenham sido feitos e o blog ainda permitir a publicação de posts com campos de autor, titulo e/ou texto vazios, adicionar dependência Spring Boot Starter Validation no pom do projeto com o seguinte trecho de código:
+
+<dependency>
+<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-validation</artifactId>
+</dependency>

@@ -47,7 +47,6 @@ public class CodeblogController {
         //Conferindo se o post está nulo. Quando é o caso, geralmente é porque um dos campos está vazio.
         post.setData(LocalDate.now());
         if(codeblogService.save(post) == null) return "redirect:/newpost";
-
         return "redirect:/posts";
     }
 }

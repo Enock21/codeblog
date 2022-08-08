@@ -23,8 +23,10 @@ public class CodeblogServiceImpl implements CodeblogService {
     }
 
     @Override
-    public Post save(Post post) throws Exception {
-        if (post.getTitulo().equals("")){
+    public Post save(Post post){
+        if (post.getTitulo().equals("") ||
+            post.getTexto().equals("") ||
+            post.getAutor().equals("")){
             return null;
         }
         return codeBlogRepository.save(post);

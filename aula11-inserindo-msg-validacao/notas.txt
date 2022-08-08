@@ -1,0 +1,5 @@
+1. Em CodeblogController > savePost() > if(), adicionar atributo (attributes.addFlashAttribute()) com a mensagem de campo vazio para o usuário.
+
+2. Criar arquivo html para inserir a validação. Em templates > new file, adicionar mensagemValidacao.html.
+
+3. Adicionar estrutura html básica de mensagemValidacao.html.

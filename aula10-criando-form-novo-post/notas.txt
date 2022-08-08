@@ -16,3 +16,5 @@
 <groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-validation</artifactId>
 </dependency>
+
+8. Caso o item 7 não resolva o problema, adicionar forma manual para detecção de campos em branco. Ou seja, no método de savePost em serviceImpl, implementar verificação de campo vazio e retornar nulo caso seja confirmado.

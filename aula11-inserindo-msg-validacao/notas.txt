@@ -3,3 +3,7 @@
 2. Criar arquivo html para inserir a validação. Em templates > new file, adicionar mensagemValidacao.html.
 
 3. Adicionar estrutura html básica de mensagemValidacao.html.
+
+4. Incorporar mensagemValidacao.html dentro do form. Em postForm.html > <div> > <div>, acrescentar logo acima da linha <form method="post"... o seguinte:
+
+<th:block th:include="mensagemValidacao"></th:block>

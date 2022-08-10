@@ -1,0 +1,5 @@
+1. Em pom.xml, descomentar as linhas referentes ao springsecurity.
+
+2. Em main > java > com.spring.codeblog, criar novo pacote "configuration".
+
+3. Dentro de configuration, criar nova classe "SecurityConfig"

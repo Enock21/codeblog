@@ -25,3 +25,5 @@
 Obs: summernote é um editor de texto já pronto. Mais detalhes em summernote.org
 
 6. Após a tag section, em postForm.html, adicionar script para ativar o summernote.
+
+7. Em postForm.html > section > div > div, na tag textarea, inserir id="summernote"

@@ -43,7 +43,7 @@
                     <input type="text" class="form-control" name="autor" placeholder="Autor *">
                 </div>
 
-                <textarea type="text" class="form-control" name="texto" placeholder="Texto *"></textarea> <!--textarea indica um texto grande-->
+                <textarea id="summernote" type="text" class="form-control" name="texto" placeholder="Texto *"></textarea> <!--textarea indica um texto grande-->
 
                 <small class="form-text text-muted">(*) Campos obrigatórios</small>
 
@@ -54,6 +54,14 @@
         </div>
     </div>
 </section>
+
+<script>
+    $('#summernote').summernote({
+        placeholder: 'Texto *',
+        tabsize: 2,
+        height: 300
+    });
+</script>
 
 </body>
 

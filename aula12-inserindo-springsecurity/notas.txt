@@ -3,3 +3,9 @@
 2. Em main > java > com.spring.codeblog, criar novo pacote "configuration".
 
 3. Dentro de configuration, criar nova classe "SecurityConfig"
+
+4. Fazer a classe SecurityConfig estender a classe WebSecurityConfigurerAdapter.
+
+5. Adicionar, acima da declaração da classe SecurityConfig, as anotações @Configuration  @EnableWebSecurity
+
+6. Construir estrutura da classe SecurityConfig.

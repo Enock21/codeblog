@@ -21,18 +21,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception{
         http.csrf().disable().authorizeRequests()
+                //Passando URIs que serão permitidas sem autenticação
                 .antMatchers(AUTH_LIST).permitAll()
+                // Indica que cada request precisa ser autenticado
                 .anyRequest().authenticated()
+                //Permissão para acessar a página de login default
                 .and().formLogin().permitAll()
                 .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
     }
 
+    //Função que define o usuário para autenticação em memória.
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception{
         auth.inMemoryAuthentication()
-                .withUser("enock").password("{noop}123").roles("ADMIN");
+                .withUser("enock").password("{noop}123").roles("ADMIN"); //Obs: {noop} serve para resolver um certo bug do springsecurity que impede que a senha seja 123
     }
 
+    //Passar o caminho das pastas estáticas. Descenessário pela utilização do bootstrap CDN.
     @Override
     public void configure(WebSecurity web) throws Exception{
         web.ignoring().antMatchers("/bootstrap/**");

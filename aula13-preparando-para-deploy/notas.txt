@@ -1,1 +1,7 @@
 AWS Eastic Beanstalk: aws.amazon.com/pt/elasticbeanstalk/
+
+1. Criar uma conta na AWS. Escolher os níveis gratuitos: Amazon EC2 e Amazon RDS (para BD)
+
+2. Criar chave de segurança: após logar na conta amazon, no menu superior, clicar no nome do perfil > credenciais de segurança > chaves de acesso
+
+3. Baixar o AWS Cli como descrito em: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGJlZFNyemJGNl9QNFlSMlhHa0MxRHpkX1ZEQXxBQ3Jtc0ttelRaUWFWOGZBNm5lREVubTI3anVHSFQ1cGlIVnlUNUtXTE9xSXd6Q2MwZVgtRGprMXY2QVRwUUVZYlRMazE3ZlZTV1ZGdDNwZHZmcmVsNXdJQUwzalBuc1hDTlRCSHFsRHBLVjB5cklXOW1ta1loZw&q=https%3A%2F%2Fdocs.aws.amazon.com%2Fpt_br%2Fcli%2Flatest%2Fuserguide%2Finstall-windows.html%23awscli-install-windows-path&v=NdCcNxGUD0A

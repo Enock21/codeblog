@@ -1,0 +1,13 @@
+1. Instalar o EB CLI: https://docs.aws.amazon.com/pt_br/elasticbeanstalk/latest/dg/eb-cli3-install-windows.html
+
+2. Para criar um app na AWS, abrir o projeto na IDE, abrir o terminal e digitar: eb init
+
+3. Se necessário, digitar chave e a chave secreta no terminal.
+
+4. Selecionar a plataforma "Java"
+
+5. Selecionar "n" para CodeCommit
+
+6. Selecionar "y" para SSH
+
+7.

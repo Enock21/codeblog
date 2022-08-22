@@ -10,4 +10,23 @@
 
 6. Selecionar "y" para SSH
 
-7.
+---
+
+Criar o BD postgres
+
+1. No terminal da IDE, digitar: aws configure
+
+2. Configurar a região para: sa-east-1
+
+3. Para listar as opções de BD disponíveis para a versão atual do aws, digitar o comando:
+
+aws rds describe-orderable-db-instance-options --engine postgres --engine-version 14.2     --query "*[].{DBInstanceClass:DBInstanceClass,StorageType:StorageType}|[?StorageType=='gp2']|[].{DBInstanceClass:DBInstanceClass}"  --output text
+
+Obs: substituir "14.2" pela versão atual do aws
+
+4. Digitar o comando: 
+
+eb create --scale 1 --database --database.engine postgres --database.instance db.t3.small
+
+Obs: substituir "db.t3.small" pelo BD de preferência, considerando que este esteja disponível na lista gerada com o código no item 3
+
